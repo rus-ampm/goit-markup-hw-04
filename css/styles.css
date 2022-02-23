@@ -7,6 +7,11 @@
   --accent-color: #2196f3;
   --secondary-accent-color: #188ce8;
   --header-logo-color: #000000;
+  --social-list-icon-color: #afb1b8;
+  --page-header-border-bottom-color: #ececec;
+  --hero-bg-color: #c4c4c4;
+  --border-project-color: #eeeeee;
+  --footer-social-list-link-bg-color: #ffffff1a;
 }
 
 .list {
@@ -85,13 +90,13 @@ img {
 }
 
 .social-list-icon {
-  fill: #afb1b8;
+  fill: var(--social-list-icon-color);
 }
 
 /*====Header====*/
 
 .page-header {
-  border-bottom: 1px solid #ececec;
+  border-bottom: 1px solid var(--page-header-border-bottom-color);
 }
 
 .header-conteiner,
@@ -173,7 +178,7 @@ img {
     url(../images/hero-bg.jpg);
   background-size: auto auto;
   background-repeat: no-repeat;
-  background-color: #c4c4c4;
+  background-color: var(--hero-bg-color);
   background-position: center;
   text-align: center;
   padding: 200px 0;
@@ -312,7 +317,7 @@ img {
   justify-content: center;
   width: 170px;
   height: 92px;
-  border: 1px solid #afb1b8;
+  border: 1px solid var(--social-list-icon-color);
   border-radius: 4px;
 }
 
@@ -327,7 +332,7 @@ img {
 }
 
 .clients-list-icon {
-  fill: #afb1b8;
+  fill: var(--social-list-icon-color);
 }
 
 /*====Portfolio-Main====*/
@@ -375,7 +380,7 @@ img {
 
 .project {
   background: var(--primary-background-color);
-  border: 1px solid #eeeeee;
+  border: 1px solid var(--border-project-color);
   box-sizing: border-box;
   margin-top: 30px;
   margin-left: 30px;
@@ -485,7 +490,7 @@ img {
   justify-content: center;
   width: 44px;
   height: 44px;
-  background-color: #ffffff1a;
+  background-color: var(--footer-social-list-link-bg-color);
   border-radius: 50%;
 }
 
