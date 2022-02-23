@@ -56,6 +56,35 @@ img {
   padding-bottom: 94px;
 }
 
+.social-list {
+  display: flex;
+  justify-content: space-between;
+}
+
+.social-list-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 44px;
+  height: 44px;
+  background-color: var(--primary-background-color);
+  border-radius: 50%;
+}
+
+.social-list-link:hover,
+.social-list-link:focus {
+  background-color: var(--accent-color);
+}
+
+.social-list-link:hover .social-list-icon,
+.social-list-link:focus .social-list-icon {
+  fill: var(--primary-background-color);
+}
+
+.social-list-icon {
+  fill: #afb1b8;
+}
+
 /*====Header====*/
 
 .page-header {
@@ -265,7 +294,7 @@ img {
 }
 
 .team-card-text {
-  padding: 30px 0;
+  padding: 30px 32px;
 }
 
 .team-card-title {
@@ -285,6 +314,7 @@ img {
   text-align: center;
   letter-spacing: 0.03em;
   color: var(--primary-text-color);
+  margin-bottom: 16px;
 }
 
 /*====Portfolio-Main====*/
