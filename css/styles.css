@@ -374,7 +374,7 @@ img {
 }
 
 .project {
-  background: #ffffff;
+  background: var(--primary-background-color);
   border: 1px solid #eeeeee;
   box-sizing: border-box;
   margin-top: 30px;
@@ -406,10 +406,19 @@ img {
 
 /*====Footer====*/
 
+.footer-container {
+  display: flex;
+  align-items: baseline;
+}
+
 .footer {
   background-color: var(--secondary-background-color);
   padding-top: 60px;
   padding-bottom: 60px;
+}
+
+.logo-address {
+  margin-right: 70px;
 }
 
 .footer .logo {
@@ -448,3 +457,37 @@ img {
   letter-spacing: 0.03em;
   color: rgba(255, 255, 255, 0.6);
 }
+
+.social-title {
+  margin-bottom: 20px;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--primary-background-color);
+}
+
+.footer .social-list-item:not(:last-child) {
+  margin-right: 10px;
+}
+
+.footer .social-list-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 44px;
+  height: 44px;
+  background-color: #ffffff1a;
+  border-radius: 50%;
+}
+
+.footer .social-list-link:hover,
+.footer .social-list-link:focus {
+  background-color: var(--accent-color);
+}
+
+.footer .social-list-icon {
+  fill: var(--primary-background-color);
