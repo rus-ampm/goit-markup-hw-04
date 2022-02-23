@@ -56,7 +56,10 @@ img {
   padding-bottom: 94px;
 }
 
-.social-list {
+.social-list,
+.clients-list,
+.features-list,
+.business-list {
   display: flex;
   justify-content: space-between;
 }
@@ -91,11 +94,7 @@ img {
   border-bottom: 1px solid #ececec;
 }
 
-.header-conteiner {
-  display: flex;
-  align-items: center;
-}
-
+.header-conteiner,
 .nav-list {
   display: flex;
   align-items: center;
@@ -214,11 +213,6 @@ img {
   background-color: var(--secondary-accent-color);
 }
 
-.features-list {
-  display: flex;
-  justify-content: space-between;
-}
-
 .features-list-item {
   width: 270px;
 }
@@ -254,11 +248,6 @@ img {
 
 .business {
   padding-top: 0;
-}
-
-.business-list {
-  display: flex;
-  justify-content: space-between;
 }
 
 .team {
@@ -315,6 +304,30 @@ img {
   letter-spacing: 0.03em;
   color: var(--primary-text-color);
   margin-bottom: 16px;
+}
+
+.clients-list-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 170px;
+  height: 92px;
+  border: 1px solid #afb1b8;
+  border-radius: 4px;
+}
+
+.clients-list-link:hover,
+.clients-list-link:focus {
+  border-color: var(--accent-color);
+}
+
+.clients-list-link:hover .clients-list-icon,
+.clients-list-link:focus .clients-list-icon {
+  fill: var(--accent-color);
+}
+
+.clients-list-icon {
+  fill: #afb1b8;
 }
 
 /*====Portfolio-Main====*/
